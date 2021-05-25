@@ -47,7 +47,8 @@
                     <span class="cate">welcome</span>
                     <h2 class="title">to Boleto </h2>
                 </div>
-                <form class="account-form">
+                <form class="account-form" action="{{route('user.custom.register')}}" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="email1">Name<span>*</span></label>
                         <input type="text" placeholder="Enter Your Name" name="name" id="email1" required>

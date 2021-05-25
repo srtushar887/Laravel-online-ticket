@@ -106,37 +106,30 @@
                     <li class="menu-title">Menu</li>
 
                     <li>
-                        <a href="{{route('superadmin.dashboard')}}" class="waves-effect">
+                        <a href="{{route('dashboard')}}" class="waves-effect">
                             <i class="ri-dashboard-line"></i><span class="badge badge-pill badge-success float-right">3</span>
                             <span>Dashboard</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{route('superadmin.general.setting')}}" class=" waves-effect">
+                        <a href="{{route('user.deposit')}}" class=" waves-effect">
                             <i class="ri-calendar-2-line"></i>
-                            <span>General Setting</span>
+                            <span>Deposit</span>
                         </a>
                     </li>
 
-{{--                    <li>--}}
-{{--                        <a href="{{route('superadmin.payment.gateway')}}" class=" waves-effect">--}}
-{{--                            <i class="ri-calendar-2-line"></i>--}}
-{{--                            <span>Payment Gateway</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-
                     <li>
-                        <a href="{{route('superadmin.ticket.management')}}" class=" waves-effect">
+                        <a href="{{route('user.buy.ticket')}}" class=" waves-effect">
                             <i class="ri-chat-1-line"></i>
-                            <span>Ticket Management</span>
+                            <span>Buy Ticket</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="{{route('superadmin.product.management')}}" class=" waves-effect">
                             <i class="ri-chat-1-line"></i>
-                            <span>Product Management</span>
+                            <span>My Ticket</span>
                         </a>
                     </li>
 
@@ -174,7 +167,7 @@
         <div class="page-content">
             <div class="container-fluid">
 
-               @yield('superadmin')
+                @yield('user')
 
             </div> <!-- container-fluid -->
         </div>

@@ -9,7 +9,7 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        $tickets = ticket::where('ticket_status',1)->inRandomOrder()->limit(12)->get();
-        return view('frontend.index',compact('tickets'));
+        $ticket_count = ticket::where('is_buy',0)->count();
+        return view('frontend.index',compact('ticket_count'));
     }
 }

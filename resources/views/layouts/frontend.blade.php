@@ -70,6 +70,9 @@
                 <li>
                     <a href="contact.html">contact</a>
                 </li>
+                <li>
+                    <a href="{{route('login')}}">Login</a>
+                </li>
                 <li class="header-button pr-0">
                     <a href="{{route('login')}}">join us</a>
                 </li>

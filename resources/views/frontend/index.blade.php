@@ -222,36 +222,7 @@
                             <a class="view-all" href="movie-grid.html">View All</a>
                         </div>
                         <div class="row mb-30-none justify-content-center">
-                            @foreach($tickets as $ticket)
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="movie-grid">
-                                    <div class="movie-thumb c-thumb">
-                                        <a href="#0">
-                                            <img src="{{asset('assets/frontend/')}}/images/movie/movie01.jpg" alt="movie">
-                                        </a>
-                                    </div>
-                                    <div class="movie-content bg-one">
-                                        <h5 class="title m-0">
-                                            <a href="#0">{{$ticket->ticket_number}}</a>
-                                        </h5>
-                                        <ul class="movie-rating-percent">
-                                            <li>
-                                                <div class="thumb">
-                                                    Price
-                                                </div>
-                                                <span class="content">${{$ticket->ticket_price}}</span>
-                                            </li>
-                                            <li>
-                                                <div class="thumb">
-                                                    EXP :
-                                                </div>
-                                                <span class="content">{{$ticket->ticket_exp_date}} Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
+                            <p class="text-left">Ticket Available</p><button class="btn btn-success btn-sm">Buy Now</button>
 
                         </div>
                     </div>

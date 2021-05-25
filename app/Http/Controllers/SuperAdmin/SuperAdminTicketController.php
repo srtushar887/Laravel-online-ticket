@@ -41,6 +41,7 @@ class SuperAdminTicketController extends Controller
                'ticket_price' => $request->ticket_price,
                'ticket_exp_date' => $request->ticket_exp_date,
                'ticket_status' => 0,
+               'is_buy' => 0,
             ]);
         }
 

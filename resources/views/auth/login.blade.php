@@ -47,14 +47,15 @@
                     <span class="cate">hello</span>
                     <h2 class="title">welcome back</h2>
                 </div>
-                <form class="account-form">
+                <form class="account-form" action="{{route('user.custom.login')}}" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="email2">Email<span>*</span></label>
-                        <input type="text" placeholder="Enter Your Email" id="email2" required>
+                        <input type="text" placeholder="Enter Your Email" name="email" id="email2" required>
                     </div>
                     <div class="form-group">
                         <label for="pass3">Password<span>*</span></label>
-                        <input type="password" placeholder="Password" id="pass3" required>
+                        <input type="password" placeholder="Password" name="password" id="pass3" required>
                     </div>
                     <div class="form-group checkgroup">
                         <input type="checkbox" id="bal2" required checked>
